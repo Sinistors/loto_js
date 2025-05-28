@@ -1,0 +1,69 @@
+.gridParent{
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mainCase, .luckyCase{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-weight: bold;
+}
+
+.mainCase{
+    color: blue;
+    &:hover{
+        color: white;
+        background-color: blue;
+    }
+}
+
+
+.mainCase.selected{
+    color: white;
+    background-color: blue;
+}
+
+.luckyCase{
+    color: red;
+    &:hover{
+        color: white;
+        background-color: red;
+    }
+}
+
+.luckyCase.selected{
+    color: white;
+    background-color: red;
+}
+
+.choices{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.d-none{
+    display: none;
+}
+
+.btn{
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+}
